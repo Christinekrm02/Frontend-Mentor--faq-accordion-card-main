@@ -1,0 +1,105 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 50px;
+}
+h2 {
+  font-size: 700;
+}
+/*main content styles */
+#content-wrapper {
+  border-radius: 25px;
+  padding: 58px;
+  margin: auto;
+  width: 79.2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: hsl(240, 100%, 99%);
+  max-height: 75vh;
+}
+
+/*left side*/
+#container-left {
+  width: auto;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  position: relative;
+}
+#container-left #woman-online-desktop {
+  position: absolute;
+  right: 180px;
+  top: 20px;
+}
+
+#container-left #woman-online-desktop img {
+  max-width: 600px;
+}
+#container-left #box-desktop {
+  position: absolute;
+  right: 460px;
+  top: 115px;
+}
+
+/*right side */
+#container-right {
+  height: auto;
+  width: auto;
+}
+
+/* Styles each button used to open and close the accordion panel */
+.accordion {
+  background-color: white;
+  color: hsl(237, 12%, 33%);
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Add a background color to the text 
+if it is clicked on (add the .active class with JS)?, 
+and when you move the mouse over it (hover) TODO: make onclick color black*/
+
+.accordion:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.accordion:hover::after {
+  color: hsl(240, 6%, 50%);
+  font-weight: 700;
+}
+
+/* Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  color: hsl(240, 6%, 50%);
+  font-weight: 400;
+  display: none;
+  overflow: hidden;
+}
+
+/* footer styles */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
